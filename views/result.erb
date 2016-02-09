@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Yummy Rummy</title>
+	<link rel="stylesheet" href=<%= url('/style.css') %>>
+</head>
+<body>
+	<div id="result">
+		<h1> Yummy Rummy </h1>
+		<h3><%= @result %></h3>
+		<p><a href="/"> Play Again </a></p>
+		<img src=<%= url("/#{@card}") %>>
+	</div>
+</body>
+</html>
