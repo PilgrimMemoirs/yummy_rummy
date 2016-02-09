@@ -1,0 +1,35 @@
+body{
+	background-color: #47C9AF;
+}
+
+h1, h2 {
+	text-align: center;
+	font-family: helvetica, sans-serif;
+	color: #3B3C3D;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline-block;
+	width: 250px;
+	height: 200px;
+	margin-right: 2%;
+	border-radius: 5%;
+	overflow: auto;
+	border-bottom: #3B3C3D solid 3px;
+	border-right: #3B3C3D solid 3px;
+}
+
+li:hover {
+	opacity: 0.9;
+}
+
+img {
+	border-radius: 5%; 
+	width: 100%;
+	height: 100%;
+}
+
