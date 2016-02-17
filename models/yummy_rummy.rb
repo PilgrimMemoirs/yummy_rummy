@@ -6,8 +6,12 @@ class Yummy_rummy
 		@@rounds +=1
 	end
 
+	def self.percentage_of_wins
+		@@wins.to_f / @@rounds.to_f * 100
+	end
+
 	def self.too_many_wins
-		if (@@wins.to_f / @@rounds.to_f * 100) > 30
+		if  percentage_of_wins > 10
 			return true
 		else
 			return false
