@@ -11,7 +11,7 @@ class Yummy_rummy
 	end
 
 	def self.too_many_wins
-		if  percentage_of_wins > 10
+		if  percentage_of_wins > 30
 			return true
 		else
 			return false
@@ -24,6 +24,9 @@ class Yummy_rummy
 		end
 	end
 
+	def self.random_result
+		["You Win", "You Lose"].sample
+	end
 
 	def self.get_result
 		add_round
@@ -32,7 +35,7 @@ class Yummy_rummy
 			return "You Lose"
 
 		else
-			result = ["You Win", "You Lose"].sample
+			result = random_result
 			tally_result(result)
 			return result
 		end
