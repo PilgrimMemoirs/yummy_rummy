@@ -8,7 +8,7 @@ end
 
 get '/result/:card' do
 	@card = params[:card]
-	@result = Yummy_rummy.get_result
+	@result = YummyRummy.get_result
 	erb :result
 end
 

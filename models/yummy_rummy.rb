@@ -1,4 +1,4 @@
-class Yummy_rummy
+class YummyRummy
 	@@wins = 0
 	@@rounds = 0
 
@@ -10,7 +10,7 @@ class Yummy_rummy
 		@@wins.to_f / @@rounds.to_f * 100
 	end
 
-	def self.too_many_wins
+	def self.too_many_wins?
 		if  percentage_of_wins > 30
 			return true
 		else
@@ -31,14 +31,15 @@ class Yummy_rummy
 	def self.get_result
 		add_round
 
-		if too_many_wins
-			return "You Lose"
+		if too_many_wins?
+			result = "You Lose"
 
 		else
 			result = random_result
 			tally_result(result)
-			return result
 		end
+
+		return result
 	end
 
 
